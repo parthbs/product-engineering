@@ -1,0 +1,98 @@
+name: Missing requirement
+description: A requirement you were actually asked for that this framework doesn't list
+title: "[Missing] "
+labels: ["missing-requirement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for this — requirements that came out of real evaluations are the
+        most valuable thing this repo can collect.
+
+        Please keep it vendor-neutral: describe the capability, not the product
+        that provides it.
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: Capability area
+      description: Which of the 30 areas does this belong to?
+      options:
+        - "01 — Product"
+        - "02 — Architecture"
+        - "03 — Multi-Tenancy"
+        - "04 — Identity & Access"
+        - "05 — Application Security"
+        - "06 — Data Security"
+        - "07 — Secrets & Configuration"
+        - "08 — Reliability"
+        - "09 — Performance & Scalability"
+        - "10 — Observability"
+        - "11 — DevOps & CI/CD"
+        - "12 — Infrastructure"
+        - "13 — Database"
+        - "14 — API Platform"
+        - "15 — Testing"
+        - "16 — Disaster Recovery"
+        - "17 — Incident Management"
+        - "18 — Audit & Governance"
+        - "19 — Compliance & Privacy"
+        - "20 — Customer Onboarding"
+        - "21 — Enterprise Administration"
+        - "22 — Enterprise Deployment"
+        - "23 — Documentation"
+        - "24 — Customer Support"
+        - "25 — Commercial Readiness"
+        - "26 — Legal"
+        - "27 — Product Analytics"
+        - "28 — Cost Management"
+        - "29 — Team & Operational Maturity"
+        - "30 — Enterprise Sales Readiness"
+        - "Spans multiple areas"
+        - "None of these — may need a new area"
+    validations:
+      required: true
+
+  - type: textarea
+    id: requirement
+    attributes:
+      label: What was asked for
+      description: State it as a verifiable checklist item, the way it would appear in an area file.
+      placeholder: |
+        Good: "Customer-managed encryption keys (BYOK) can be rotated by the
+        customer without a support ticket, and rotation is recorded in the audit log."
+
+        Not useful: "Better key management."
+    validations:
+      required: true
+
+  - type: dropdown
+    id: level
+    attributes:
+      label: Which maturity level does this belong at?
+      options:
+        - "Level 2 — Production Ready"
+        - "Level 3 — Enterprise Ready"
+        - "Level 4 — Enterprise Scale"
+        - "Not sure"
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Where did this come up?
+      description: >
+        Security questionnaire, procurement, architecture review, renewal, audit?
+        Roughly what kind of buyer — regulated industry, public sector, large
+        enterprise? No need to name the customer.
+    validations:
+      required: true
+
+  - type: textarea
+    id: consequence
+    attributes:
+      label: What happened when it was missing?
+      description: Blocked the deal, delayed it, accepted with a commitment date, worked around?
+    validations:
+      required: false

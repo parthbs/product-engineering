@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Contribution guidelines
+    url: https://github.com/parthbs/product-engineering/blob/main/README.md#contributing
+    about: What makes a useful contribution, and the rules every item follows.
+  - name: Security — reporting guidance that would weaken a system
+    url: https://github.com/parthbs/product-engineering/security/policy
+    about: Don't open a public issue for this. Use private vulnerability reporting.

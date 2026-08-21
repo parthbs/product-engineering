@@ -1,0 +1,6 @@
+# Requires an authenticated session — resolves to a login redirect for the
+# link checker, not a broken link.
+https://github.com/parthbs/product-engineering/security/advisories/new
+
+# Rate-limits aggressively against CI runners.
+https://creativecommons.org/licenses/by/4.0/
