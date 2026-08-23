@@ -1,0 +1,62 @@
+name: Correction or clarity fix
+description: Something here is wrong, vague, or can't be verified
+title: "[Correction] "
+labels: ["correction"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Every item in this repo is supposed to be **verifiable** — someone should
+        be able to say yes or no to it without arguing about definitions. Items
+        that fail that test are bugs. So are items that are simply wrong.
+
+  - type: dropdown
+    id: kind
+    attributes:
+      label: What kind of problem is it?
+      options:
+        - "Wrong — the item states something incorrect"
+        - "Unverifiable — no way to objectively say yes or no"
+        - "Vague — could be read two different ways"
+        - "Misplaced — wrong area or wrong maturity level"
+        - "Not vendor-neutral — assumes a specific product or stack"
+        - "Unclear wording — correct, but hard to follow"
+    validations:
+      required: true
+
+  - type: input
+    id: location
+    attributes:
+      label: Where is it?
+      description: File and section, or a link to the line on GitHub.
+      placeholder: "README.md — 'How to use it', step 2  ·  or  ·  areas/03-multi-tenancy.md — Level 3"
+    validations:
+      required: true
+
+  - type: textarea
+    id: current
+    attributes:
+      label: Current text
+      description: Paste it exactly as written.
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: What's wrong with it
+      description: >
+        For "unverifiable", say what two people would disagree about. For "wrong",
+        say what's actually true and how you know.
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed replacement
+      description: >
+        Optional, but a concrete rewrite is far more likely to get merged than a
+        report alone. Keep it verifiable and vendor-neutral.
+    validations:
+      required: false

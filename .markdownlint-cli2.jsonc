@@ -1,0 +1,28 @@
+{
+  // Rule reference: https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md
+  "config": {
+    "default": true,
+
+    // MD013 (line length): this repo is long-form prose, and hard-wrapping it
+    // would make table rows and checklist items painful to edit and review.
+    "MD013": false,
+
+    // MD024 (duplicate headings): area files legitimately repeat headings like
+    // "Level 3" under different parent sections. Only flag true siblings.
+    "MD024": { "siblings_only": true },
+
+    // MD029 (ordered list numbering): keep it explicit so renumbering a step
+    // doesn't silently reorder guidance.
+    "MD029": { "style": "ordered" }
+  },
+
+  "globs": ["**/*.md"],
+
+  "ignores": [
+    "node_modules/**",
+
+    // GitHub renders this into a PR body, where convention starts at "##".
+    // MD041 (first line should be a top-level heading) doesn't apply.
+    ".github/PULL_REQUEST_TEMPLATE.md"
+  ]
+}
