@@ -100,7 +100,8 @@ must not become another tenant's incident.
       *Evidence:* the deployment path, and at least one customer running on it;
       see area 22
 - [ ] Cost and resource usage are attributable per tenant
-      *Evidence:* a cost breakdown by tenant; see area 28
+      *Evidence:* a report showing infrastructure spend for a named tenant over a
+      billing period; see area 28
 - [ ] A tenant's data can be exported or migrated between deployment models on
       request
       *Evidence:* a completed export or migration, end to end
