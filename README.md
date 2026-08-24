@@ -2,7 +2,7 @@
 
 A vendor-neutral checklist and maturity model for taking a software product from "it works" to "an enterprise will buy it, deploy it, and audit it."
 
-> **Status:** early. The framework below is stable; the per-area content is being written. See [Roadmap](#roadmap).
+> **Status:** early. The framework below is stable; the per-area content is being written. See the [roadmap](ROADMAP.md).
 
 ---
 
@@ -147,27 +147,15 @@ examples/         Worked examples of scoring a hypothetical product
 
 ## Roadmap
 
-- [ ] Write the checklist for all 30 areas across levels 1–4
-- [ ] Publish a scorecard template
-- [ ] Add a gap-analysis template with sequencing guidance
-- [ ] Add worked examples
-- [ ] Add references to relevant standards and control frameworks
+Work is ordered by what everything else depends on — the per-area file schema before the 30 files that inherit it, templates before the examples that use them.
+
+[ROADMAP.md](ROADMAP.md) has the sequence, what is deliberately not planned, and how to argue for a different order.
 
 ## Contributing
 
-Contributions are welcome, particularly from people who have been through real enterprise evaluations.
+Contributions are welcome, particularly from people who have been through real enterprise evaluations. A requirement a buyer actually asked for is worth more here than one a framework says they should ask for.
 
-Useful contributions:
-
-- Requirements you were asked for that aren't listed here
-- Corrections where a checklist item is wrong, vague, or unmeasurable
-- Clarity edits
-
-Guidelines:
-
-- Stay vendor-neutral. Describe the capability, not the product that provides it.
-- Every checklist item should be verifiable. "Has good security" is not an item; "access reviews are performed and recorded at least quarterly" is.
-- Open an issue before large structural changes.
+Two rules govern everything: stay vendor-neutral, and make every item verifiable. [CONTRIBUTING.md](CONTRIBUTING.md) covers what those mean in practice, how to place an item at the right maturity level, and what to expect from review. Participation is subject to the [Code of Conduct](CODE_OF_CONDUCT.md).
 
 ## License
 
