@@ -14,6 +14,11 @@ content.
 
 ### Added
 
+- `areas/README.md` — the per-area file schema: fixed section order, the
+  mandatory evidence line on every checklist item, the reversibility marker the
+  gap analysis will sort on, and an index of all 30 areas.
+- `areas/03-multi-tenancy.md` — first area file, written against that schema.
+  19 items across levels 1 to 4, each naming the artifact that proves it.
 - Maturity model with four levels — MVP, Production Ready, Enterprise Ready,
   Enterprise Scale — and the scoring method: score each area 1 to 4, take the
   floor rather than the average, sequence gaps by reversibility.
@@ -41,6 +46,7 @@ content.
 
 - README's Contributing and Roadmap sections replaced with pointers to
   `CONTRIBUTING.md` and `ROADMAP.md`, which now hold that content.
+- README's area table links each area to its file as that file is written.
 - Markdown normalized repository-wide to satisfy the lint job: table separator
   spacing, blank lines around headings and tables, fenced code block languages.
 

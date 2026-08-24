@@ -13,7 +13,7 @@ unverifiable claim the framework tells you not to make.
 
 ---
 
-## 1. Per-area file schema — *not started*
+## 1. Per-area file schema — *done*
 
 Define what an `areas/NN-name.md` file contains before writing 30 of them:
 section order, how checklist items are phrased, how levels are delimited, how an
@@ -39,7 +39,7 @@ doesn't define that scoping step. The scorecard cannot be built until it does.
 **Done when:** `maturity/` holds the model in enough detail that two people
 scoring the same product independently land on the same number.
 
-## 3. The 30 area files — *not started*
+## 3. The 30 area files — *in progress*
 
 One file per capability area, with checklists at levels 1 through 4.
 
@@ -51,6 +51,8 @@ they can be added at any point.
 **Done when:** all 30 files exist, each with items at every level that applies,
 and every item satisfies the verifiability rule in
 [CONTRIBUTING.md](CONTRIBUTING.md).
+
+**Written so far:** 03 Multi-Tenancy.
 
 ## 4. Scorecard template — *not started*
 

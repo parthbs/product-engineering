@@ -75,7 +75,7 @@ Grouped for navigation; numbering is stable and maps to file names.
 | --- | --- | --- |
 | 01 | Product | Is the value proposition and scope clear to a buyer? |
 | 02 | Architecture | Does the design support the levels you're targeting? |
-| 03 | Multi-Tenancy | Is tenant data isolated, and provably so? |
+| 03 | [Multi-Tenancy](areas/03-multi-tenancy.md) | Is tenant data isolated, and provably so? |
 
 ### Security
 
@@ -144,6 +144,8 @@ maturity/         The maturity model in detail, with scoring guidance
 templates/        Scorecards, gap analysis, security questionnaire responses
 examples/         Worked examples of scoring a hypothetical product
 ```
+
+[areas/README.md](areas/README.md) defines the format every area file follows, and indexes all 30. Area names link from the table above as each file is written.
 
 ## Roadmap
 
